@@ -3,7 +3,7 @@ pipeline {
         stages {
                 stage('Build') {
                         steps {
-                                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: '']]])
+                                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mhdnurfaizzy/akulaku-test.git']]])
                    }
                 }
                 stage('Test') {
