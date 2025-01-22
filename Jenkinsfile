@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven' // Ensure this matches the name configured in "Global Tool Configuration"
+        maven 'maven' // Ensure this matches the name configured in "Global Tool Configuration"
     }
     stages {
         stage('Checkout') {
